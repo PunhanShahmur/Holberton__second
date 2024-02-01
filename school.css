@@ -1,0 +1,428 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    background-color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+header{
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.3s linear;
+}
+.active{
+    position: fixed;
+    background-color: #FFFFFF;
+}
+header .navbar{
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+header .navbar .logo{
+    position: absolute;
+}
+header .navbar .logo a{
+    cursor: pointer;
+}
+header .navbar .logo a img{
+    height: 50px;
+}
+header .navbar .parapgraph{
+    margin: 0 auto;
+}
+header .navbar .parapgraph a{
+    color: #e1003c;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 111%;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0 16px;
+    transition: all 0.4s linear;
+    position: relative;
+}
+
+header .navbar .parapgraph a::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #e1003c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+header .navbar .burger{
+    display: none;
+}
+
+main{
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+main .about__holberton{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+main .about__holberton .overlay{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+}
+
+main .about__holberton .title{
+    padding-bottom: 30px;
+    bottom: 10%;
+    left: 10%;
+    position: absolute;
+    z-index: 1;
+    padding: 20px 30px;
+    width: fit-content;
+}
+main .about__holberton .title p{
+    color: #FFF;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+main .about__holberton img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main article{
+    width: calc(66.7% - 14px);
+    margin-top: calc(100vh - 50px);
+}
+
+
+main .left__aside .line{
+    height: 0.5px;
+    width: 100%;
+    background-color: #e1003c;
+    margin: 80px 0;
+
+}
+
+
+main .left__aside .holberton{
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    background-color: #e1003c;
+    padding: 20px 30px;
+    margin-bottom: 80px;
+}
+
+main .left__aside .holberton h1, h2{
+    color: #FFFFFF;
+    font-weight: 500;
+
+
+}
+main .left__aside .holberton>p{
+    margin-top: 15px;
+}
+main .left__aside .holberton .holberton__content{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+main .left__aside .holberton .holberton__content p, main .left__aside .holberton>p{
+    color: #FFFFFF;
+}
+main .left__aside .holberton .holberton__content img{
+    border-radius: 20px;
+    width: 240px;
+    max-height: 260px;
+    object-fit: cover;
+}
+main .left__aside .holberton__why{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+main .left__aside .holberton__why a{
+    display: flex;
+}
+main .left__aside .holberton__why h2,main .left__aside .holberton__why>p{
+    color: #e1003c;
+}
+
+main .left__aside .holberton img{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+
+aside{
+    margin-top: calc(100vh - 50px);
+    width: calc(33.3% - 7px);
+}
+
+footer{
+    background-color: #e1003c;
+    padding: 40px 80px;
+}
+footer .contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-bottom: 40px;
+}
+footer .contact .contact__left{}
+footer .contact .contact__left p{
+    color: #FFFFFF;
+    font-size: 80px;
+    line-height: 60px;
+}
+footer .contact .contact__right{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+footer .contact .contact__right img{
+    height: 40px;
+    border-radius: 100%;
+}
+footer .copyright{
+    padding: 40px 0 0;
+    border-top: 1px solid #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .copyright p{
+    color: #FFFFFF;
+}
+footer .copyright a{
+
+    color: #FFFFFF;
+}
+
+
+
+
+.bg{
+    position: absolute;
+    right: 0;
+    top: 10vh;
+    z-index: -1;
+}
+.bg img{
+    height: 100vh;
+}
+
+
+main .tweets__box{
+    width: 100%;
+}
+
+main .tweets__box  .tweets__title{
+    margin-bottom: 30px;
+}
+main .tweets__box  .tweets__title h3{
+    color: #e1003c;
+    font-size: 44px;
+}
+
+main .tweets__box .tweets__cards{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 1280px) {
+    #aboutMe{
+        width: calc(100vw - 160px);
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .container{
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    header .navbar{
+        justify-content: space-between;
+    }
+    header .navbar .logo{
+        position: static;
+    }
+    header .navbar .logo a img{
+        height: 40px;
+    }
+    header .navbar .parapgraph{
+        margin: 0;
+    }
+    header .navbar .parapgraph a{
+        margin: 0 8px;
+        font-size: 16px;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    main .about__holberton .title p{
+        font-size: 50px;
+    }
+
+    main article, main aside, #aboutMe{
+        width: 100%;
+    }
+    main aside{
+        margin-top: 0;
+        margin-bottom: 60px;
+    }
+
+    main .left__aside .holberton .holberton__content p, main .left__aside .holberton__why>p, main .left__aside .holberton>p{
+        font-size: 14px;
+    }
+
+
+
+    footer .contact .contact__left p{
+        font-size: 45px;
+        line-height: 33px;
+    }
+    footer .contact .contact__right img{
+        height: 30px;
+    }
+    footer .contact .contact__right img{
+        gap: 0;
+    }
+    footer .copyright{
+        padding: 30px 0 0;
+    }
+    footer .copyright p, footer .copyright a{
+        font-size: 14px
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .container{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .bg{
+        right: -50px;
+    }
+    header .navbar .parapgraph{
+        display: none;
+    }
+    header .navbar .burger{
+        display: block;
+    }
+    header .navbar .burger img{
+        width: 24px;
+    }
+    header .navbar .burger .burger__menu{
+        display: none;
+        background-color: #f9f9f9;
+        width: fit-content;
+        height: fit-content;
+        position: absolute;
+        padding: 30px 20px;
+        z-index: 1000;
+        right: 17px;
+        top: 60px;
+        flex-direction: column;
+        gap: 10px;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+        border: 1px solid #e1003c;
+    }
+    header .navbar .burger .burger__menu a{
+        color: #e1003c;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 111%;
+        text-decoration: none;
+        font-weight: 700;
+        transition: all 0.4s linear;
+        position: relative;
+        width: fit-content;
+    }
+    header .navbar .burger .burger__menu a::after{
+        content: '';
+        height: 2px;
+        width: 100%;
+        background-color: #e1003c;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    header .navbar .burger .burger__menu img{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 20px;
+        cursor: pointer;
+    }
+
+    main .about__holberton .title p{
+        font-size: 30px;
+    }
+    main .left__aside .holberton .holberton__content{
+        flex-direction: column;
+    }
+    main .left__aside .holberton .holberton__content img{
+        width: 100%;
+        max-height: max-content;
+    }
+    footer .contact .contact__left p {
+        font-size: 24px;
+        line-height: 20px;
+    }
+    footer .contact .contact__right img {
+        height: 20px;
+    }
+    footer .copyright{
+        align-items: flex-start;
+        gap: 10px;
+        flex-direction: column;
+    }
+}

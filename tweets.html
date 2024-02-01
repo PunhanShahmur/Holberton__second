@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.webp">
+    <link rel="stylesheet" href="./school.css">
+    <title>Holberton School | Tweets</title>
+</head>
+
+<body>
+    <header id="navbar">
+        <div class="navbar container">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="https://apply.holbertonschool.com/holberton-logo.png" alt="">
+                </a>
+            </div>
+            <div class="parapgraph">
+                <a href="./index.html">Home</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="burger">
+                <img id="burgerActive" src="./assets/img/Icon/burger.png" alt="">
+                <div class="burger__menu">
+                    <a href="./index.html">Home</a>
+                    <a href="#contact">Contact</a>
+                    <img id="burgerDeactive" src="./assets/img/Icon/cancel.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <div class="tweets__box">
+            <div class="tweets__title">
+                <h3>Tweets</h3>
+            </div>
+            <div class="tweets__cards">
+                <blockquote class="twitter-tweet">
+                    <p lang="en" dir="ltr">What a great experience to meet Holberton School Azerbaijan&#39;s first
+                        cohort students in our Open Ceremony in Baku! Holberton&#39;s CEO, Florian Bucher, wishes them a
+                        lot of success!<br><br>Special thanks to our partners <a
+                            href="https://twitter.com/idda?ref_src=twsrc%5Etfw">@idda</a>.azerbaijan and <a
+                            href="https://twitter.com/PASHAHoldingLLC?ref_src=twsrc%5Etfw">@PASHAHoldingLLC</a> <a
+                            href="https://t.co/g44zApzpqr">pic.twitter.com/g44zApzpqr</a></p>&mdash; Holberton School 🌎
+                    (@holbertonschool) <a
+                        href="https://twitter.com/holbertonschool/status/1711724580195164554?ref_src=twsrc%5Etfw">October
+                        10, 2023</a>
+                </blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <blockquote class="twitter-tweet">
+                    <p lang="zxx" dir="ltr"><a href="https://t.co/dCXtF0HpME">pic.twitter.com/dCXtF0HpME</a></p>&mdash;
+                    Holberton School 🌎 (@holbertonschool) <a
+                        href="https://twitter.com/holbertonschool/status/1752285801382113376?ref_src=twsrc%5Etfw">January
+                        30, 2024</a>
+                </blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <blockquote class="twitter-tweet">
+                    <p lang="en" dir="ltr">Happy Year Update! ✅ ✨ <br><br>May you experience enhanced life features and
+                        infinite possibilities ahead! 🔆<a
+                            href="https://twitter.com/hashtag/newyear?src=hash&amp;ref_src=twsrc%5Etfw">#newyear</a> <a
+                            href="https://twitter.com/hashtag/holbertonschool?src=hash&amp;ref_src=twsrc%5Etfw">#holbertonschool</a>
+                        <a
+                            href="https://twitter.com/hashtag/codingschool?src=hash&amp;ref_src=twsrc%5Etfw">#codingschool</a>
+                        <a href="https://t.co/SkLFfbtyjh">pic.twitter.com/SkLFfbtyjh</a></p>&mdash; Holberton School 🌎
+                    (@holbertonschool) <a
+                        href="https://twitter.com/holbertonschool/status/1741852061417808339?ref_src=twsrc%5Etfw">January
+                        1, 2024</a>
+                
+            </div>
+        </div>
+    </main>
+
+    <footer id="contact">
+        <div class="contact container">
+            <div class="contact__left">
+                <p>&lt;Contact/&gt;<br>With me</p>
+            </div>
+            <div class="contact__right">
+                <a href="https://github.com/PunhanShahmur"><img src="./assets/img/Icon/github.png" alt=""></a>
+                <a href="https://www.instagram.com/punhan_sahmurov/"><img src="./assets/img/Icon/instagram.png" alt=""></a>
+                <a href="https://wa.me/+994708838788"><img src="./assets/img/Icon/whatsapp.png" alt=""></a>
+            </div>
+        </div>
+        <div class="copyright container">
+            <p>Made by Shahmurov Punhan for <a href="https://apply.holbertonschool.com" target="_blank">Holberton
+                    School</a></p>
+            <a href="tel:+994708838788">+994(70)-883-87-88</a>
+        </div>
+    </footer>
+
+
+    <script>
+         let navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 400) {
+        navbar.classList.add("active"); // Change to the desired background color
+    } else {
+        navbar.classList.remove("active")
+    }
+});
+
+
+
+document.getElementById("burgerActive").addEventListener("click", function(){
+            document.getElementById("burgerActive").style.display = "none";
+            document.querySelector(".burger__menu").style.display = "flex"
+
+        });
+
+        document.getElementById("burgerDeactive").addEventListener("click", function(){
+            document.getElementById("burgerActive").style.display = "block"
+            document.querySelector(".burger__menu").style.display = "none"
+        })
+
+    </script>
+</body>
+
+</html>

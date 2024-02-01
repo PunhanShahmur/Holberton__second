@@ -199,7 +199,8 @@ aside{
 
 footer{
     background-color: #e1003c;
-    padding: 40px 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 footer .contact{
     display: flex;
@@ -223,7 +224,7 @@ footer .contact .contact__right img{
     border-radius: 100%;
 }
 footer .copyright{
-    padding: 40px 0 0;
+    padding-top: 40px;
     border-top: 1px solid #FFFFFF;
     display: flex;
     justify-content: space-between;
@@ -333,7 +334,7 @@ main .tweets__box .tweets__cards{
         gap: 0;
     }
     footer .copyright{
-        padding: 30px 0 0;
+        padding-top: 30px;
     }
     footer .copyright p, footer .copyright a{
         font-size: 14px
